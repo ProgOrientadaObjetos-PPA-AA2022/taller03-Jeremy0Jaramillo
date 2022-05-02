@@ -43,7 +43,7 @@ public class Ejecutor {
         ie2.establecerGastosProyectados(120.55);
         ie2.establecerPresupuestos();
         
-        System.out.printf("\nInstitución:\n\nNombre de Institución: %s\n"
+        System.out.printf("\n\nInstitución 2:\n\nNombre de Institución: %s\n"
                 + "Tipo de Institución: %s\nNúmero de Alumnos: %d\n"
                 + "Número de Docentes: %d\nNúmero de Sedes: %d\n"
                 + "Gastos Proyectados: %.2f\nPresupuesto:%.2f\n", ie2.obtenerNombre(),

@@ -15,7 +15,7 @@ public class EquipoCelulares {
     private int informacionIMEI;
     private double tamañoPantalla;
     private double costo;
-    private int iva;
+    private double iva;
     private double ivaInicial;
     private double costoFinal;
     
@@ -34,14 +34,14 @@ public class EquipoCelulares {
     public void establecerCosto(double n){
         costo = n;
     }
-    public void establecerIva(int n){
+    public void establecerIva(double n){
         iva = n;
     }
     public void establecerIvaInicial(){
-        ivaInicial = costo * iva;
+        ivaInicial = costo * (iva/100);
     }
     public void establecerCostoFInal(){
-        costo =costo + ivaInicial;
+        costoFinal = costo + ivaInicial;
     }
     
     public String obtenerSistemaOperativo(){
@@ -59,7 +59,7 @@ public class EquipoCelulares {
     public double obtenerCosto(){
         return costo;
     }
-    public int obtenerIva(){
+    public double obtenerIva(){
         return iva;
     }
     public double obtenerIvaInicial(){
